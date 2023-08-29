@@ -1,0 +1,170 @@
+[
+    {
+        "name": "Arsenal",
+        "city": "London",
+        "stadium": "Emirates Stadium",
+        "nickname": "The Gunners",
+        "clud_id": "18bb7c10",
+        "logo": "https://resources.premierleague.com/premierleague/badges/50/t3.png"
+    },
+    {
+        "name": "Chelsea",
+        "city": "London",
+        "stadium": "Stamford Bridge",
+        "nickname": "The Blues",
+        "clud_id": "cff3d9bb",
+        "logo": "https://resources.premierleague.com/premierleague/badges/50/t8.png"
+    },
+    {
+        "name": "Tottenham Hotspur",
+        "city": "London",
+        "stadium": "Tottenham Hotspur Stadium",
+        "nickname": "Spurs",
+        "clud_id": "361ca564",
+        "logo": ""
+    },
+    {
+        "name": "Manchester United",
+        "city": "Manchester",
+        "stadium": "Old Trafford",
+        "nickname": "The Red Devils",
+        "clud_id": "19538871",
+        "logo": "https://resources.premierleague.com/premierleague/badges/50/t1.png"
+    },
+    {
+        "name": "Brentford",
+        "city": "London",
+        "stadium": "GTech Community Stadium",
+        "nickname": "The Bees",
+        "clud_id": "cd051869",
+        "logo": "https://resources.premierleague.com/premierleague/badges/50/t94.png"
+    },
+    {
+        "name": "Liverpool",
+        "city": "Liverpool",
+        "stadium": "Anfield",
+        "nickname": "The Reds",
+        "clud_id": "822bd0ba",
+        "logo": "https://resources.premierleague.com/premierleague/badges/50/t14.png"
+    },
+    {
+        "name": "Manchester City",
+        "city": "Manchester",
+        "stadium": "Etihad Stadium",
+        "nickname": "The Cityzens",
+        "clud_id": "b8fd03ef",
+        "logo": "https://resources.premierleague.com/premierleague/badges/50/t43.png"
+    },
+    {
+        "name": "Brighton",
+        "city": "Brighton and Hove",
+        "stadium": "Amex Community Stadium",
+        "nickname": "The Seagulls",
+        "clud_id": "d07537b9",
+        "logo": "https://resources.premierleague.com/premierleague/badges/50/t36.png"
+    },
+    {
+        "name": "Sheffield United",
+        "city": "Sheffield",
+        "stadium": "Bramall Lane",
+        "nickname": "The Blades",
+        "clud_id": "1df6b87e",
+        "logo": ""
+    },
+    {
+        "name": "Fulham",
+        "city": "London",
+        "stadium": "Craven Cottage",
+        "nickname": "The Cottagers",
+        "clud_id": "fd962109",
+        "logo": "https://resources.premierleague.com/premierleague/badges/50/t54.png"
+    },
+    {
+        "name": "Newcastle United",
+        "city": "Newcastle upon Tyne",
+        "stadium": "St. James' Park",
+        "nickname": "The Magpies",
+        "clud_id": "b2b47a98",
+        "logo": "https://resources.premierleague.com/premierleague/badges/50/t4.png"
+    },
+    {
+        "name": "Luton Town",
+        "city": "Luton",
+        "stadium": "Kenilworth Roads",
+        "nickname": "The Hatters",
+        "clud_id": "e297cd13",
+        "logo": ""
+    },
+    {
+        "name": "Bournemouth",
+        "city": "Bournemouth",
+        "stadium": "Vitality Stadium",
+        "nickname": "The Cherries",
+        "clud_id": "4ba7cbea",
+        "logo": "https://resources.premierleague.com/premierleague/badges/50/t91.png"
+    },
+    {
+        "name": "Wolverhampton Wanderers",
+        "city": "Wolverhampton",
+        "stadium": "Molineux Stadium",
+        "nickname": "Wolves",
+        "clud_id": "8cec06e1",
+        "logo": "https://resources.premierleague.com/premierleague/badges/50/t39.png"
+    },
+    {
+        "name": "Crystal Palace",
+        "city": "London",
+        "stadium": "Selhurst Park",
+        "nickname": "The Eagles",
+        "clud_id": "47c64c55",
+        "logo": "https://resources.premierleague.com/premierleague/badges/50/t31.png"
+    },
+    {
+        "name": "Arsenal",
+        "city": "London",
+        "stadium": "Emirates Stadium",
+        "nickname": "The Gunners",
+        "clud_id": "18bb7c10",
+        "logo": "https://resources.premierleague.com/premierleague/badges/50/t3.png"
+    },
+    {
+        "name": "Everton",
+        "city": "Liverpool",
+        "stadium": "Goodison Park",
+        "nickname": "The Toffees",
+        "clud_id": "d3fd31cc",
+        "logo": "https://resources.premierleague.com/premierleague/badges/50/t11.png"
+    },
+    {
+        "name": "Aston Villa",
+        "city": "Birmingham",
+        "stadium": "Villa Park",
+        "nickname": "The Villans",
+        "clud_id": "8602292d",
+        "logo": "https://resources.premierleague.com/premierleague/badges/50/t7.png"
+    },
+    {
+        "name": "West Ham",
+        "city": "London",
+        "stadium": "London Stadium",
+        "nickname": "The Irons",
+        "clud_id": "7c21e445",
+        "logo": "https://resources.premierleague.com/premierleague/badges/50/t21.png"
+    },
+    {
+        "name": "Nottingham Forest",
+        "city": "Nottingham",
+        "stadium": "City Ground",
+        "nickname": "Forest",
+        "clud_id": "e4a775cb",
+        "logo": "https://resources.premierleague.com/premierleague/badges/50/t17.png"
+    },
+    {
+        "name": "Burnley",
+        "city": "Burnley",
+        "stadium": "Turf Moor",
+        "nickname": "The Clarets",
+        "clud_id": "943e8050",
+        "logo": ""
+    }
+]
