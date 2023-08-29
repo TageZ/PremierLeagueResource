@@ -21,7 +21,7 @@
         "stadium": "Tottenham Hotspur Stadium",
         "nickname": "Spurs",
         "clud_id": "361ca564",
-        "logo": ""
+        "logo": "https://resources.premierleague.com/premierleague/badges/50/t6.png"
     },
     {
         "name": "Manchester United",
@@ -69,7 +69,7 @@
         "stadium": "Bramall Lane",
         "nickname": "The Blades",
         "clud_id": "1df6b87e",
-        "logo": ""
+        "logo": "https://resources.premierleague.com/premierleague/badges/50/t49.png"
     },
     {
         "name": "Fulham",
@@ -93,7 +93,7 @@
         "stadium": "Kenilworth Roads",
         "nickname": "The Hatters",
         "clud_id": "e297cd13",
-        "logo": ""
+        "logo": "https://resources.premierleague.com/premierleague/badges/50/t102.png"
     },
     {
         "name": "Bournemouth",
@@ -165,6 +165,6 @@
         "stadium": "Turf Moor",
         "nickname": "The Clarets",
         "clud_id": "943e8050",
-        "logo": ""
+        "logo": "https://resources.premierleague.com/premierleague/badges/50/t90.png"
     }
 ]
