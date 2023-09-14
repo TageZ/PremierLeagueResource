@@ -67,6 +67,7 @@ def scrapeResults(team):
     return matches
 
 
+#Grabs the appropriate data from the html and creates match objects to represent each fixture.
 def getFixtures(matches, team):
     fixtures = []
     for i in range(0, NUM_MATCHES):
@@ -86,6 +87,7 @@ def getFixtures(matches, team):
     return fixtures
 
 
+#Grabs the appropriate data from the html and creates match objects to represent each result
 def getResults(matches, team):
     results = []
     for i in range(0, NUM_MATCHES):
