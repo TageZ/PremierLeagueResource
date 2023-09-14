@@ -10,6 +10,7 @@ with open('teams.json', 'r') as file:
     teams_data = json.load(file)
 
 teams = {team['name']: team for team in teams_data}
+NUM_MATCHES = 3
 
 
 class Match:
@@ -19,8 +20,14 @@ class Match:
         self.hometeam = hometeam
         self.awayteam = awayteam
 
+    def __init__(self, date, score, hometeam, awayteam):
+        self.date = date
+        self.score = score
+        self.hometeam = hometeam
+        self.awayteam = awayteam
 
-def parseFixtures(team):
+
+def scrapeFixtures(team):
     website = teams[team]['website'] + '/fixtures'
     service = Service(executable_path='chromedriver.exe')
     options = webdriver.ChromeOptions()
@@ -34,10 +41,10 @@ def parseFixtures(team):
     soup = BeautifulSoup(html, 'lxml')
     table = soup.find('section', {'class', 'fixtures'})
     matches = table.findAll('div', attrs={'class': 'fixtures__date-container'})
-    print(matches)
+    return matches
 
 
-def parseResults(team):
+def scrapeResults(team):
     website = teams[team]['website'] + '/results'
     service = Service(executable_path='chromedriver.exe')
     options = webdriver.ChromeOptions()
@@ -51,14 +58,41 @@ def parseResults(team):
     soup = BeautifulSoup(html, 'lxml')
     table = soup.find('section', {'class', 'fixtures'})
     matches = table.findAll('div', attrs={'class': 'fixtures__date-container'})
-    print(matches)
-
-
-def getFixtures(results, team, num):
-    matches = 'N/A'
     return matches
 
 
-def getResults(results, team, num):
-    matches = 'N/A'
-    return matches
+def getFixtures(matches, team):
+    fixtures = []
+    for i in range(0, NUM_MATCHES):
+        matchTeams = (matches[i].findAll(
+            'span', {'class', 'match-fixture__team'}))
+        hometeam = matchTeams[0].find(
+            'span', {'class', 'match-fixture__short-name'}).text
+        awayteam = matchTeams[1].find(
+            'span', {'class', 'match-fixture__short-name'}).text
+        date = matches[i].find(
+            'time', {'class', 'fixtures__date fixtures__date--short'}).text
+        time = matches[i].find(
+            'span', {'class', 'match-fixture__teams'}).find('time').text
+
+        fixtures.append(Match(date, time, hometeam, awayteam))
+
+    return fixtures
+
+
+def getResults(matches, team):
+    results = []
+    for i in range(0, NUM_MATCHES):
+        matchTeams = (matches[i].findAll(
+            'span', {'class', 'match-fixture__team'}))
+        hometeam = matchTeams[0].find(
+            'span', {'class', 'match-fixture__short-name'}).text
+        awayteam = matchTeams[1].find(
+            'span', {'class', 'match-fixture__short-name'}).text
+        date = matches[i].find(
+            'time', {'class', 'fixtures__date fixtures__date--short'}).text
+        score = matches[i].find('span', {'class', 'match-fixture__score'}).text
+
+        results.append(Match(date, score, hometeam, awayteam))
+
+    return results
