@@ -1,6 +1,8 @@
 import json
+import time
 import requests
 import requests.auth
+from selenium import webdriver
 from bs4 import BeautifulSoup
 
 with open('teams.json', 'r') as file:
@@ -19,14 +21,14 @@ class Match:
 
 def parseFixtures(team):
     website = teams[team]['website'] + '/fixtures'
-    teamWebsite = requests.get(website, timeout=15)
+    teamWebsite = requests.get(website, timeout=(15))
     html = teamWebsite.text
-    return html
     soup = BeautifulSoup(html, 'lxml')
     table = soup.find('section', {'class', 'fixtures'})
     matches = table.findAll('div', attrs={'class': 'fixtures__date-container'})
-    return matchesW
+    return matches
 
+print(parseFixtures("Arsenal"))
 
 def parseResults(team):
     website = teams[team]['website'] + '/results'
