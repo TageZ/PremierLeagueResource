@@ -1,3 +1,5 @@
+# File for retriving fixture information.
+
 import json
 from bs4 import BeautifulSoup
 from selenium import webdriver
