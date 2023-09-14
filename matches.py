@@ -8,13 +8,16 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
+# Loads teams.json into the file.
 with open('teams.json', 'r') as file:
     teams_data = json.load(file)
-
 teams = {team['name']: team for team in teams_data}
+
+#Declares constant variable for the number of matches to show.
 NUM_MATCHES = 3
 
 
+#Defines a match object, which reprsents any fixture. A match has a date, hometeam, awayteam, and can have a score if it's already happened, or a time of kickoff if the game hasn't been played yet.
 class Match:
     def __init__(self, date, time, hometeam, awayteam):
         self.date = date
@@ -29,6 +32,7 @@ class Match:
         self.awayteam = awayteam
 
 
+#Collects the fixtures for a given team from the Premier League website. Returns matches, which is a list of html blocks, each of which hold the information for a single match.
 def scrapeFixtures(team):
     website = teams[team]['website'] + '/fixtures'
     service = Service(executable_path='chromedriver.exe')
@@ -45,7 +49,7 @@ def scrapeFixtures(team):
     matches = table.findAll('div', attrs={'class': 'fixtures__date-container'})
     return matches
 
-
+#Collects the results for a given team from the Premier League website. Returns matches, which is a list of html blocks, each of which hold the information for a single match.
 def scrapeResults(team):
     website = teams[team]['website'] + '/results'
     service = Service(executable_path='chromedriver.exe')
