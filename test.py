@@ -13,7 +13,6 @@ options.add_argument('--headless')
 driver = webdriver.Chrome(service=service, options=options)
 driver.implicitly_wait(5)
 driver.get(url)
-time.sleep(10)
 
 content = driver.find_element(By.CSS_SELECTOR, "div[class*='fixtures__date-container'")
 
