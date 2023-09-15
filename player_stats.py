@@ -7,9 +7,12 @@ import requests.auth
 #Collects a table of top scorers for a given club from the BBC website. Returns goal scorers, a table containing all top scorers.
 def scrapeScorers(team):
     website = 'https://www.bbc.com/sport/football/teams/' + team + '/top-scorers'
+    if (not team):
+        website = 'https://www.bbc.com/sport/football/premier-league/top-scorers'
     goalsWebsite = requests.get(website, timeout=10)
     html = goalsWebsite.text
     soup = BeautifulSoup(html, 'lxml')
+    print(soup.text)
     goalScorers = soup.find('tbody', {'class', 'gel-long-primer'})
     return goalScorers
 
@@ -17,6 +20,8 @@ def scrapeScorers(team):
 #Collects a table of top assisters for a given club from the BBC website. Returns assiters, a table containing all top assisters.
 def scrapeAssisters(team):
     website = 'https://www.bbc.com/sport/football/teams/' + team + '/top-scorers/assists'
+    if (not team):
+        website = 'https://www.bbc.com/sport/football/premier-league/top-scorers/assists'
     assitsWebsite = requests.get(website, timeout=10)
     html = assitsWebsite.text
     soup = BeautifulSoup(html, 'lxml')
@@ -56,15 +61,3 @@ def getAssisters(assisters):
 
         players.append({'Name': player, 'Assists': assists})
     return players
-
-def scrapeLeagueScorers():
-    return None
-
-def scrapeLeagueAssisters():
-    return None
-
-def getLeagueScorers():
-    return None
-
-def getLeagueAssisters():
-    return None
