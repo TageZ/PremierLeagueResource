@@ -12,7 +12,6 @@ def scrapeScorers(team):
     goalsWebsite = requests.get(website, timeout=10)
     html = goalsWebsite.text
     soup = BeautifulSoup(html, 'lxml')
-    print(soup.text)
     goalScorers = soup.find('tbody', {'class', 'gel-long-primer'})
     return goalScorers
 
