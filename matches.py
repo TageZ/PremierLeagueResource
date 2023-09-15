@@ -31,6 +31,8 @@ class Match:
         self.hometeam = hometeam
         self.awayteam = awayteam
 
+    def __str__(self):
+        return self.hometeam + ' ' + self.score + ' ' + self.awayteam
 
 #Collects the fixtures for a given team from the Premier League website. Returns matches, which is a list of html blocks, each of which hold the information for a single match.
 def scrapeFixtures(team):
@@ -68,7 +70,7 @@ def scrapeResults(team):
 
 
 #Grabs the appropriate data from the html and creates match objects to represent each fixture.
-def getFixtures(matches, team):
+def getFixtures(matches):
     fixtures = []
     for i in range(0, NUM_MATCHES):
         matchTeams = (matches[i].findAll(
@@ -88,7 +90,7 @@ def getFixtures(matches, team):
 
 
 #Grabs the appropriate data from the html and creates match objects to represent each result
-def getResults(matches, team):
+def getResults(matches):
     results = []
     for i in range(0, NUM_MATCHES):
         matchTeams = (matches[i].findAll(
