@@ -16,16 +16,24 @@ function App() {
   }, [])
 
   return (
-    <div>
-
+    
+    <div className="logos">
+    <h1>Team Logos</h1>
       {(typeof data.name === 'undefined') ? (
         <p>Loading...</p>
       ) : (
         data.name.map((name, i) => (
-          <p key={i}><img src={name} alt="club logo" width='200' height='200'></img></p>
+          <div className="logo" key={i}>
+            <img 
+              className="hover-zoom" 
+              src={name} 
+              alt="club logo" 
+              width='200' 
+              height='200'>
+            </img>
+          </div>
         ))
       )}
-
     </div>
   )
 }
