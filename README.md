@@ -2,8 +2,6 @@
 
 A comprehensive resource for premier league information.
 
-#WORK IN PROGRESS
+Through the use of web-scraping, this application can gather a team's upcoming fixtures, recent results, top scorers, and top assisters. It can also obtain the top scorers and assisters for the Premier League as a whole.
 
-The goal of this project is to create a full-stack web application for general premier league information. When prompted, the application should provide the following information for each team: upcoming fixtures, recent results, and general information about the team, such as their stadium, nickname, and so on. It should also be able to provide the league table.
-
-I'd also like to add individual statistics i.e. top scorers, top assisters, so on.
+Currently working on creating a front end for this application using React. When that is completed, a link to the website will be provided, where this application will be able to be used.
