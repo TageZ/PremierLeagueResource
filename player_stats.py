@@ -4,10 +4,8 @@ from bs4 import BeautifulSoup
 import requests
 import requests.auth
 
-#Collects a table of top scorers for a given club (or the league if no team is provided) from the BBC website. Returns goal scorers, a table containing all top scorers.
+#Collects a table of top scorers for a given club from the BBC website. Returns goal scorers, a table containing all top scorers.
 def scrapeScorers(team):
-    if (not team):
-        team = 'premier-league'
     website = 'https://www.bbc.com/sport/football/teams/' + team + '/top-scorers'
     goalsWebsite = requests.get(website, timeout=10)
     html = goalsWebsite.text
@@ -16,10 +14,8 @@ def scrapeScorers(team):
     return goalScorers
 
 
-#Collects a table of top assisters for a given club (or the league if no team is provided) from the BBC website. Returns assiters, a table containing all top assisters.
+#Collects a table of top assisters for a given club from the BBC website. Returns assiters, a table containing all top assisters.
 def scrapeAssisters(team):
-    if (not team):
-        team = 'premier-league'
     website = 'https://www.bbc.com/sport/football/teams/' + team + '/top-scorers/assists'
     assitsWebsite = requests.get(website, timeout=10)
     html = assitsWebsite.text
@@ -60,3 +56,15 @@ def getAssisters(assisters):
 
         players.append({'Name': player, 'Assists': assists})
     return players
+
+def scrapeLeagueScorers():
+    return None
+
+def scrapeLeagueAssisters():
+    return None
+
+def getLeagueScorers():
+    return None
+
+def getLeagueAssisters():
+    return None
