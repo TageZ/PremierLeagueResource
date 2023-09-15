@@ -4,7 +4,8 @@ import utils
 import json
 
 
-goalData = player_stats.getScorers(player_stats.scrapeScorers(''))
+goalData = player_stats.getScorers(
+    player_stats.scrapeScorers('arsenal'))
 
 print(utils.create_html_table(goalData))
 
@@ -14,10 +15,10 @@ print(utils.create_html_table(assistData))
 
 fixtures = matches.scrapeFixtures('Arsenal')
 fixture_list = matches.getFixtures(fixtures)
-for i in range(0,len(fixture_list)):
+for i in range(0, len(fixture_list)):
     print(fixture_list[i])
 
 results = matches.scrapeResults('Arsenal')
 results_list = matches.getResults(results)
-for i in range(0,len(results_list)):
+for i in range(0, len(results_list)):
     print(results_list[i])
