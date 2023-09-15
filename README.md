@@ -1,6 +1,6 @@
 # PremierLeagueResource
 
-A comprehensive resource for premier league information.
+A comprehensive resource for Premier League information.
 
 Through the use of web-scraping, this application can gather a team's upcoming fixtures, recent results, top scorers, and top assisters. It can also obtain the top scorers and assisters for the Premier League as a whole.
 
