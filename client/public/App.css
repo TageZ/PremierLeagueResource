@@ -32,16 +32,72 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
 }
 
+.banner {
+  background: #291536;
+  line-height: 6rem;
+  color: #fff;
+  top: 0;
+  left: 0;
+  width: 100%;
+  transition: box-shadow .2s;
+  backface-visibility: hidden;
+  position: relative;
+}
+
+.app-title {
+  font-size: 1.2rem;
+  line-height: 3.8rem;
+  display: flex;
+  justify-content: center;
+  font-family: PremierSans-Heavy, Arial, Helvetica Neue, Helvetica, sans-serif;
+  font-weight: 400;
+
+}
+
+.logos {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.logo {
+  margin: 6px;
+}
+
 .hover-zoom {
-  transition: transform 0.3s ease; /* Add a smooth transition effect */
+  transition: transform 0.2s ease;
+  /* Add a smooth transition effect */
 }
 
 .hover-zoom:hover {
-  transform: scale(1.1); /* Zoom in by 10% on hover */
+  transform: scale(1.2);
+  /* Zoom in by 10% on hover */
 }
 
+.pl-logo-container {
+  display: flex;
+  justify-content: center;
+}
+
+.pl-logo {
+  display: flex;
+  justify-content: center;
+}
+
+.sections {
+  padding: 0px;
+  margin: 0px;
+  width: 100%;
+}
+
+body {
+  display: block;
+  margin: 0px;
+  padding: 0px;
+}

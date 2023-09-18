@@ -1,0 +1,1 @@
+<img className="pl-header-logo" src="https://www.premierleague.com/resources/rebrand/v7.129.2/i/elements/pl-main-logo.png" alt="Premier League Logo"></img>

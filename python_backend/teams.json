@@ -7,7 +7,7 @@
         "clud_id": "18bb7c10",
         "website": "https://www.premierleague.com/clubs/1/Arsenal",
         "logo": "https://resources.premierleague.com/premierleague/badges/rb/t3.svg",
-        "reference_bbc": "arsenal"
+        "tag": "arsenal"
     },
     {
         "name": "Chelsea",
@@ -17,7 +17,7 @@
         "clud_id": "cff3d9bb",
         "website": "https://www.premierleague.com/clubs/4/Chelsea",
         "logo": "https://resources.premierleague.com/premierleague/badges/rb/t8.svg",
-        "reference_bbc": "chelsea"
+        "tag": "chelsea"
     },
     {
         "name": "Tottenham Hotspur",
@@ -27,7 +27,7 @@
         "clud_id": "361ca564",
         "website": "https://www.premierleague.com/clubs/21/Tottenham-Hotspur",
         "logo": "https://resources.premierleague.com/premierleague/badges/rb/t6.svg",
-        "reference_bbc": "tottenham-hostpur"
+        "tag": "tottenham-hostpur"
     },
     {
         "name": "Manchester United",
@@ -37,7 +37,7 @@
         "clud_id": "19538871",
         "website": "https://www.premierleague.com/clubs/12/Manchester-United",
         "logo": "https://resources.premierleague.com/premierleague/badges/rb/t1.svg",
-        "reference_bbc": "manchester-united"
+        "tag": "manchester-united"
     },
     {
         "name": "Brentford",
@@ -47,7 +47,7 @@
         "clud_id": "cd051869",
         "website": "https://www.premierleague.com/clubs/130/Brentford",
         "logo": "https://resources.premierleague.com/premierleague/badges/rb/t94.svg",
-        "reference_bbc": "brentford"
+        "tag": "brentford"
     },
     {
         "name": "Liverpool",
@@ -57,7 +57,7 @@
         "clud_id": "822bd0ba",
         "website": "https://www.premierleague.com/clubs/10/Liverpool",
         "logo": "https://resources.premierleague.com/premierleague/badges/rb/t14.svg",
-        "reference_bbc": "liverpool"
+        "tag": "liverpool"
     },
     {
         "name": "Manchester City",
@@ -67,7 +67,7 @@
         "clud_id": "b8fd03ef",
         "website": "https://www.premierleague.com/clubs/11/Manchester-City",
         "logo": "https://resources.premierleague.com/premierleague/badges/rb/t43.svg",
-        "reference_bbc": "manchester-city"
+        "tag": "manchester-city"
     },
     {
         "name": "Brighton & Hove Albion",
@@ -77,7 +77,7 @@
         "clud_id": "d07537b9",
         "website": "https://www.premierleague.com/clubs/131/Brighton-and-Hove-Albion",
         "logo": "https://resources.premierleague.com/premierleague/badges/rb/t36.svg",
-        "reference_bbc": "brighton-and-hove-albion"
+        "tag": "brighton-and-hove-albion"
     },
     {
         "name": "Sheffield United",
@@ -87,7 +87,7 @@
         "clud_id": "1df6b87e",
         "website": "https://www.premierleague.com/clubs/18/Sheffield-United",
         "logo": "https://resources.premierleague.com/premierleague/badges/rb/t49.svg",
-        "reference_bbc": "sheffield-united"
+        "tag": "sheffield-united"
     },
     {
         "name": "Fulham",
@@ -97,7 +97,7 @@
         "clud_id": "fd962109",
         "website": "https://www.premierleague.com/clubs/34/Fulham",
         "logo": "https://resources.premierleague.com/premierleague/badges/rb/t54.svg",
-        "reference_bbc": "fulham"
+        "tag": "fulham"
     },
     {
         "name": "Newcastle United",
@@ -107,7 +107,7 @@
         "clud_id": "b2b47a98",
         "website": "https://www.premierleague.com/clubs/23/Newcastle-United",
         "logo": "https://resources.premierleague.com/premierleague/badges/rb/t4.svg",
-        "reference_bbc": "newcastle-united"
+        "tag": "newcastle-united"
     },
     {
         "name": "Luton Town",
@@ -117,7 +117,7 @@
         "clud_id": "e297cd13",
         "website": "https://www.premierleague.com/clubs/163/Luton-Town",
         "logo": "https://resources.premierleague.com/premierleague/badges/rb/t102.svg",
-        "reference_bbc": "luton town"
+        "tag": "luton town"
     },
     {
         "name": "Bournemouth",
@@ -127,7 +127,7 @@
         "clud_id": "4ba7cbea",
         "website": "https://www.premierleague.com/clubs/127/Bournemouth",
         "logo": "https://resources.premierleague.com/premierleague/badges/rb/t91.svg",
-        "reference_bbc": "afc-bournemouth"
+        "tag": "afc-bournemouth"
     },
     {
         "name": "Wolverhampton Wanderers",
@@ -137,7 +137,7 @@
         "clud_id": "8cec06e1",
         "website": "https://www.premierleague.com/clubs/38/Wolverhampton-Wanderers",
         "logo": "https://resources.premierleague.com/premierleague/badges/rb/t39.svg",
-        "reference_bbc": "wolverhampton-wanderers"
+        "tag": "wolverhampton-wanderers"
     },
     {
         "name": "Crystal Palace",
@@ -147,7 +147,7 @@
         "clud_id": "47c64c55",
         "website": "https://www.premierleague.com/clubs/6/Crystal-Palace",
         "logo": "https://resources.premierleague.com/premierleague/badges/rb/t31.svg",
-        "reference_bbc": "crystal-palace"
+        "tag": "crystal-palace"
     },
     {
         "name": "Everton",
@@ -157,7 +157,7 @@
         "clud_id": "d3fd31cc",
         "website": "https://www.premierleague.com/clubs/7/Everton",
         "logo": "https://resources.premierleague.com/premierleague/badges/rb/t11.svg",
-        "reference_bbc": "everton"
+        "tag": "everton"
     },
     {
         "name": "Aston Villa",
@@ -167,7 +167,7 @@
         "clud_id": "8602292d",
         "website": "https://www.premierleague.com/clubs/2/Aston-Villa",
         "logo": "https://resources.premierleague.com/premierleague/badges/rb/t7.svg",
-        "reference_bbc": "aston-villa"
+        "tag": "aston-villa"
     },
     {
         "name": "West Ham United",
@@ -177,7 +177,7 @@
         "clud_id": "7c21e445",
         "website": "https://www.premierleague.com/clubs/25/West-Ham-United",
         "logo": "https://resources.premierleague.com/premierleague/badges/rb/t21.svg",
-        "reference_bbc": "west-ham-united"
+        "tag": "west-ham-united"
     },
     {
         "name": "Nottingham Forest",
@@ -187,7 +187,7 @@
         "clud_id": "e4a775cb",
         "website": "https://www.premierleague.com/clubs/15/Nottingham-Forest",
         "logo": "https://resources.premierleague.com/premierleague/badges/rb/t17.svg",
-        "reference_bbc": "nottingham-forest"
+        "tag": "nottingham-forest"
     },
     {
         "name": "Burnley",
@@ -197,6 +197,6 @@
         "clud_id": "943e8050",
         "website": "https://www.premierleague.com/clubs/43/Burnley",
         "logo": "https://resources.premierleague.com/premierleague/badges/rb/t90.svg",
-        "reference_bbc": "burnley"
+        "tag": "burnley"
     }
 ]
