@@ -1,0 +1,8 @@
+.team-page{
+    display: flex;
+    flex-direction: column;
+}
+
+.team-page-body{
+    padding-top: 50px;
+}

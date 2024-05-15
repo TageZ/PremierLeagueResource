@@ -1,0 +1,43 @@
+.navBar{
+    flex: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 50px;
+    background-color: #291536;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 1px 1px 1px 1px black;
+  }
+
+  .home-icon{
+    height:35px;
+    width: auto;
+  }
+  
+  .navButton{
+    border: none;
+    background: none;
+    padding: 10;
+    cursor: pointer;
+    flex: 0;
+    transition: transform 0.3s;
+  }
+  
+  .navButton:hover{
+    cursor: pointer;
+    transform: scale(1.25);
+  }
+  
+  .navTitle{
+    flex: 1; 
+    display: flex;       
+    justify-content: center; 
+    align-items: center;  
+    margin: 0;
+    font-family: 'Premier League', sans-serif;
+    font-weight: 400;
+    height: inherit;      
+  }
