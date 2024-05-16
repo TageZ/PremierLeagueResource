@@ -1,6 +1,7 @@
-.stat-box{
+.matches-box{
     width: 20vw;
-    padding: 1vw;
+    padding-left: 5vw;
+    padding-right: 5vw;
     border-radius: 15px;
 }
 
@@ -18,7 +19,7 @@
     border-top-right-radius: 2.5vh;
 }
 
-.player-box{
+.fixture-box{
     padding-left: 1vw;
     padding-right: 1vw;
     padding-top: 1vh;
@@ -27,14 +28,47 @@
     font-weight: bold;
     font-size: 3.5vh;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: cetner;
+    align-items: center;
 }
 
-.player-boxes{
+.fixture-boxes{
     color: white;
     background-image: linear-gradient(45deg, #3B99FC 25%, #3BA9FF 25%, #3BA9FF 50%, #3B99FC 50%, #3B99FC 75%, #3BA9FF 75%, #3BA9FF);
     background-size: 10vw 10vw;
     border-bottom-left-radius: 2.5vh; 
     border-bottom-right-radius: 2.5vh;
 }
+
+.fixture-info{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.date{
+    text-align: center;
+}
+
+.competition{
+    text-align: center;
+}
+
+.time{
+    width: 33%;
+    text-align: center;
+}
+
+.home-team{
+    width: 33%;
+    text-align:left;
+}
+
+.away-team{
+    width: 33%;
+    text-align: right;
+}
+

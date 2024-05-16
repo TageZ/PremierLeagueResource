@@ -8,7 +8,9 @@ function LeagueScorers(){
 
     async function getScorers() {
         const data = await Api("scorers?name=");
-        setScorers(data.slice(0,5));
+        if (data != undefined){
+            setScorers(data.slice(0,5));
+        }
     }
   
     useEffect (() => {
