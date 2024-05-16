@@ -13,7 +13,7 @@ function Home({teams, setTeam}){
 
             <div className="logos">
                 {(teams.map((team, i) => (
-                    <Logo name={team.tag} logo={team.logo} key={i} setTeam={setTeam}/>
+                    <Logo teams={teams} name={team.tag} logo={team.logo} key={i} setTeam={setTeam}/>
                 )))}
             </div>
         </div >

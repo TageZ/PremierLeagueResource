@@ -12,7 +12,6 @@ teams_data = sorted(teams_data, key=lambda x: x['name'])
 app = Flask(__name__)
 CORS(app, resources={r"/*": {"origins": "*"}})
 
-
 @app.route('/teams')
 def teams():
     return teams_data

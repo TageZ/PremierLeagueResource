@@ -1,0 +1,26 @@
+.view-buttons{
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 2vh;
+}
+
+.view-button {
+    background-color: white;
+    padding: 1vh 2vw;
+    color: #291536;
+    text-align: center;
+    font-size: 2.5vh;
+    font-family: 'Premier League', sans-serif;
+    border-radius: 2.5vh;
+    border: 1px solid #291536;
+    cursor: pointer;
+}
+
+.view-button.active {
+    background-color: #291536;
+    color: white;
+}
+
+.view-button:not(:last-child) {
+    margin-right: 10px;
+}
