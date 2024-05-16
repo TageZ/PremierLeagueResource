@@ -3,8 +3,7 @@ import Banner from '../Components/Banner';
 import '../Styling/Loading.css'
 
 function Loading(){
-    console.log('loading');
-
+    
     return (
         <div className='loading-page'>
             <Banner/>

@@ -7,7 +7,7 @@ const NavBar = ({ title }) => {
         <button className="navButton" onClick={() => window.location.href = '/'}>
             <img className="home-icon" src={process.env.PUBLIC_URL + "assets/home-icon.png"} />
         </button>
-        <h1 className="navTitle">{title}</h1>
+        <div className="navTitle">{title}</div>
       </nav>
     );
   };

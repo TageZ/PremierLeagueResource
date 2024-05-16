@@ -39,7 +39,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home teams={teams} setTeam={setTeam}/>} />
           {teams.map((team, i) => (
-            <Route key={i} path={`/${team.tag}`} element={<Team team={team.tag} logo={team.logo}/>} />
+            <Route key={i} path={`/${team.tag}`} element={<Team team={team.tag} logo={team.logo} name={team.name}/>} />
           ))}
         </Routes>
       </BrowserRouter>

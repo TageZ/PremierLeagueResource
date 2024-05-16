@@ -13,14 +13,7 @@ function Logo({name, logo, i, setTeam}){
 
     return (
         <div className="logo" key={i}>
-            <img
-            onClick={handleClick}
-            className="hover-zoom"
-            src={logo}
-            alt="club logo"
-            width='80'
-            height='80'>
-            </img>
+            <img className="logo-image" onClick={handleClick} src={logo} alt={name}/>
         </div>
     )
 }

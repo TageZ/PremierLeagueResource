@@ -1,5 +1,7 @@
 # File for retriving fixture information.
 
+#TODO Probaby going to redo this with skysports.com/_name_-fixtures(results)
+
 import json
 from bs4 import BeautifulSoup
 from selenium import webdriver

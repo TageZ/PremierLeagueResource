@@ -1,17 +1,15 @@
-.logos {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-}
-  
 .logo {
-    margin: 6px;
+    width: 4.5vw;
+    margin: 0.1vw;
+    height: auto;
 }
   
-.hover-zoom {
+.logo-image {
+    width: 100%;
+    height: auto;
     transition: transform 0.3s ease;
 }
   
-.hover-zoom:hover {
+.logo-image:hover {
     transform: scale(1.3);
 }
