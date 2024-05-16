@@ -2,7 +2,7 @@ import React from 'react'
 import {useNavigate} from 'react-router-dom'
 import '../Styling/Logo.css'
 
-function Logo({name, logo, i, setTeam}){
+function Logo({name, logo, index, setTeam}){
 
     const navigate = useNavigate();
 
@@ -12,7 +12,7 @@ function Logo({name, logo, i, setTeam}){
     }
 
     return (
-        <div className="logo" key={i}>
+        <div className="logo" key={index}>
             <img className="logo-image" onClick={handleClick} src={logo} alt={name}/>
         </div>
     )

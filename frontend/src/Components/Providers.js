@@ -8,7 +8,9 @@ function Providers({team, name}){
 
     async function getProviders() {
         const data = await Api("assisters?name=" + team);
-        setProviders(data.slice(0,5));
+        if (data != undefined){
+            setProviders(data.slice(0,5));
+        }
     }
   
     useEffect (() => {

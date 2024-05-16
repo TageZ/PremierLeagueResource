@@ -17,6 +17,18 @@ CORS(app, resources={r"/*": {"origins": "*"}})
 def teams():
     return teams_data
 
+@app.route('/fixtures')
+def fixtures():
+    team = request.args.get('name')
+    fixtures = matches.scrapeFixtures(team)
+    return matches.getFixtures(fixtures)
+
+@app.route('/results')
+def results():
+    team = request.args.get('name')
+    results = matches.scrapeResults(team)
+    return matches.getResults(results)
+
 @app.route('/scorers')
 def scorers():
     team = request.args.get('name')
