@@ -2,12 +2,11 @@ import React from 'react'
 import {useNavigate} from 'react-router-dom'
 import '../Styling/Logo.css'
 
-function Logo({name, logo, index, setTeam}){
+function Logo({name, logo, index}){
 
     const navigate = useNavigate();
 
     function handleClick(){
-        setTeam(name)
         navigate("/" + name)
     }
 

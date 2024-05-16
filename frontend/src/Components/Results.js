@@ -5,10 +5,7 @@ import '../Styling/Fixtures.css'
 function Results({teams, team, name}){
 
     function getLogoByTag(tag) {
-        if (tag){
-            tag = tag.replace(/and/g, '&')
-        }
-        const team = teams.find(team => team.name === tag);
+        const team = teams.find(team => team.alt_name === tag);
         return team ? team.logo : null;
     }
 
@@ -44,7 +41,7 @@ function Results({teams, team, name}){
                                 <img className='logo'src={getLogoByTag(fixture.homeTeam)}></img>
                             </div>
                             <div className='score'>
-                                {fixture.score}
+                                {fixture.score ? (fixture.score.replace(/-/g, ' - ')) : ''}
                             </div>
                             <div className='away-team'>
                                 <img className='logo' src={getLogoByTag(fixture.awayTeam)}></img>

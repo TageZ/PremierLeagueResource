@@ -5,7 +5,9 @@ import Banner from '../Components/Banner';
 //Styling
 import '../Styling/Home.css'
 
-function Home({teams, setTeam}){
+function Home({teams}){
+
+    console.log(teams);
 
     return (
         <div className='sections'>
@@ -13,7 +15,7 @@ function Home({teams, setTeam}){
 
             <div className="logos">
                 {(teams.map((team, i) => (
-                    <Logo teams={teams} name={team.tag} logo={team.logo} key={i} setTeam={setTeam}/>
+                    <Logo teams={teams} name={team.bbc_tag} logo={team.logo} key={i}/>
                 )))}
             </div>
         </div >

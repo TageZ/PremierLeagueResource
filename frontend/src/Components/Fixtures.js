@@ -5,10 +5,7 @@ import '../Styling/Fixtures.css'
 function Fixtures({teams, team, name}){
 
     function getLogoByTag(tag) {
-        if (tag){
-            tag = tag.replace(/and/g, '&')
-        }
-        const team = teams.find(team => team.name === tag);
+        const team = teams.find(team => team.alt_name === tag);
         return team ? team.logo : null;
     }
 

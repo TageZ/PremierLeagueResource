@@ -1,11 +1,16 @@
 .matches-box{
-    width: 20vw;
-    padding-left: 5vw;
-    padding-right: 5vw;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    width: 22vw;
+    height: 100%;
+    padding-left: 2vw;
+    padding-right: 2vw;
     border-radius: 15px;
 }
 
 .stat-title{
+    flex: 0;
     background-color: #291536;
     padding-left: 2vw;
     padding-right: 2vw;
@@ -34,6 +39,10 @@
 }
 
 .fixture-boxes{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     color: white;
     background-image: linear-gradient(45deg, #3B99FC 25%, #3BA9FF 25%, #3BA9FF 50%, #3B99FC 50%, #3B99FC 75%, #3BA9FF 75%, #3BA9FF);
     background-size: 10vw 10vw;

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState } from 'react'
 import NavBar from '../Components/Navbar'
 import '../Styling/Team.css'
 import Scorers from '../Components/Scorers'
@@ -7,7 +7,7 @@ import Fixtures from '../Components/Fixtures'
 import Results from '../Components/Results'
 import Button from '../Components/Button'
 
-function Team({teams, team, logo, name}){
+function Team({teams, stat_tag, match_tag, logo, name}){
 
     const [view, setView] = useState('fixtures');
 
@@ -17,20 +17,20 @@ function Team({teams, team, logo, name}){
             
             <div className='team-page-body'>
                 <div className="logo-container">
-                    <img className="club-logo" src={logo} />
+                    <img className="club-logo" src={logo} alt="team-logo"/>
                 </div>
                 <div className='team-info'>
                     <div className='fixtures'>
                         <Button view={view} setView={setView}/>
-                        {view == 'fixtures' ? 
-                            (<Fixtures teams={teams} team={team} name={name}/>)
+                        {view === 'fixtures' ? 
+                            (<Fixtures teams={teams} team={match_tag} name={name}/>)
                         :
-                            (<Results teams={teams} team={team} name={name}/>)
+                            (<Results teams={teams} team={match_tag} name={name}/>)
                         }
                     </div>
                     <div className='stats'>
-                        <Scorers team={team} name={name}/>
-                        <Providers team={team} name={name}/>
+                        <Scorers team={stat_tag} name={name}/>
+                        <Providers team={stat_tag} name={name}/>
                     </div>
                 </div>
             </div>

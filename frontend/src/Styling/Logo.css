@@ -1,12 +1,12 @@
 .logo {
-    width: 4.5vw;
-    margin: 0.1vw;
-    height: auto;
+    height: 10vh;
+    width: auto;
+    margin: 0.3vw;
 }
   
 .logo-image {
-    width: 100%;
-    height: auto;
+    height: 10vh;
+    width: auto;
     transition: transform 0.3s ease;
 }
   

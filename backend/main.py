@@ -2,18 +2,24 @@ from flask import Flask, request
 from flask_cors import CORS
 import player_stats
 import matches
+import teams
 import json
 
 with open('teams.json', 'r') as file:
     teams_data = json.load(file)
 
-teams_data = sorted(teams_data, key=lambda x: x['name'])
+teams_data = sorted(teams_data, key=lambda x: x['sky_tag'])
 
 app = Flask(__name__)
 CORS(app, resources={r"/*": {"origins": "*"}})
 
+@app.route('/update_teams')
+def update_teams():
+    teams.buildTeamsJson()
+    return "Completed"
+
 @app.route('/teams')
-def teams():
+def get_teams():
     return teams_data
 
 @app.route('/fixtures')

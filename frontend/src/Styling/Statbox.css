@@ -1,5 +1,8 @@
 .stat-box{
-    width: 20vw;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    width: 30vw;
     padding: 1vw;
     border-radius: 15px;
 }
@@ -32,6 +35,7 @@
 }
 
 .player-boxes{
+    flex: 1;
     color: white;
     background-image: linear-gradient(45deg, #3B99FC 25%, #3BA9FF 25%, #3BA9FF 50%, #3B99FC 50%, #3B99FC 75%, #3BA9FF 75%, #3BA9FF);
     background-size: 10vw 10vw;

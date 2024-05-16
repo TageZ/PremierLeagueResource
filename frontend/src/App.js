@@ -6,7 +6,6 @@ import Loading from './Pages/Loading'
 
 function App() {
   const [teams, setTeams] = useState([{}])
-  const [team, setTeam] = useState('')
 
   async function getTeams() {
       try {
@@ -37,9 +36,9 @@ function App() {
     teams.length > 1 ? (
       <BrowserRouter data-testid="browser-router">
         <Routes>
-          <Route path="/" element={<Home teams={teams} setTeam={setTeam}/>} />
+          <Route path="/" element={<Home teams={teams}/>} />
           {teams.map((team, i) => (
-            <Route key={i} path={`/${team.tag}`} element={<Team teams={teams} team={team.tag} logo={team.logo} name={team.name}/>} />
+            <Route key={i} path={`/${team.bbc_tag}`} element={<Team teams={teams} stat_tag={team.bbc_tag} match_tag={team.sky_tag} logo={team.logo} name={team.name}/>} />
           ))}
         </Routes>
       </BrowserRouter>
