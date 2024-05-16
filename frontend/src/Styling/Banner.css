@@ -1,0 +1,65 @@
+.banner {
+    background: #291536;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    width: 100vw;
+    height: 85vh
+}
+
+.title-container {
+    display: flex;
+    background-image: linear-gradient(45deg, #3B99FC 25%, #3BA9FF 25%, #3BA9FF 50%, #3B99FC 50%, #3B99FC 75%, #3BA9FF 75%, #3BA9FF);
+    background-size: 30vw 30vw;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 6.5vh;
+    font-size: 5vh;
+    font-family: 'Premier League', sans-serif;
+    font-weight: 400;
+}
+
+.banner-content{
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.banner-side-bar{
+    flex: 1;
+    width: 55vh;
+    height: 55vh;
+    margin: 1vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(-45deg, #3B99FC 25%, #3BA9FF 25%, #3BA9FF 50%, #3B99FC 50%, #3B99FC 75%, #3BA9FF 75%, #3BA9FF);
+    background-size: 15vw 15vw;
+    border-radius: 5vh;
+}
+
+.side-bar-content{
+    width: 52vh;
+    height: 52vh;
+    background-color: white;
+    border-radius: 5vh;
+}
+
+.pl-logo-container{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pl-logo{
+    height: calc(85vh - 7.5vh);
+}
+
+

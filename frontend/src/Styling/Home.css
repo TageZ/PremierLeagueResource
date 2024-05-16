@@ -1,0 +1,19 @@
+.sections {
+  padding: 0px;
+  margin: 0px;
+  width: 100%;
+}
+
+.logos {
+  height: 15vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body {
+  display: block;
+  margin: 0px;
+  padding: 0px;
+}

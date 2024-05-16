@@ -1,0 +1,15 @@
+.logo {
+    width: 4.5vw;
+    margin: 0.1vw;
+    height: auto;
+}
+  
+.logo-image {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+  
+.logo-image:hover {
+    transform: scale(1.3);
+}

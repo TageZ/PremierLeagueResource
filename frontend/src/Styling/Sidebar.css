@@ -1,0 +1,36 @@
+.stat-box{
+    width: 20vw;
+    padding: 5vw;
+    border-radius: 15px;
+}
+
+.side-bar-title{
+    background-color: #291536;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    color: white;
+    text-align: center;
+    font-size: 3.5vh;
+    font-family: 'Premier League', sans-serif;
+    border-top-left-radius: 2.5vh;
+    border-top-right-radius: 2.5vh;
+}
+
+.side-bar-box{
+    padding-left: 1vw;
+    padding-right: 1vw;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 4.5vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.side-bar-boxes{
+    color: black;
+}
