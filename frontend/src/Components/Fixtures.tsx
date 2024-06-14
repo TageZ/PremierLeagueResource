@@ -1,6 +1,14 @@
 import React, { useState, useEffect } from 'react'
-import Api from '../Utils/Api';
-import '../Styling/Fixtures.css'
+import Api from '../Utils/Api.ts';
+import '../Styling/Fixtures.scss'
+
+interface Fixture{
+    date: string;
+    competition: string;
+    homeTeam: string;
+    awayTeam: string;
+    time: string;
+}
 
 function Fixtures({teams, team, name}){
 
@@ -9,7 +17,7 @@ function Fixtures({teams, team, name}){
         return team ? team.logo : null;
     }
 
-    const [fixtures, setFixtures] = useState([{}]);
+    const [fixtures, setFixtures] = useState<Fixture[]>([]);
 
     async function getFixtures() {
         const data = await Api("fixtures?name=" + team);

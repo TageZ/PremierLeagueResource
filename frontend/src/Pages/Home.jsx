@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react'
 //Components
-import Logo from '../Components/Logo';
-import Banner from '../Components/Banner';
+import Logo from '../Components/Logo.tsx';
+import Banner from '../Components/Banner.tsx';
 //Styling
-import '../Styling/Home.css'
+import '../Styling/Home.scss'
 
 function Home({teams}){
 

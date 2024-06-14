@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react'
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Home from './Pages/Home'
-import Team from './Pages/Team'
-import Loading from './Pages/Loading'
+import Home from './Pages/Home.jsx'
+import Team from './Pages/Team.js'
+import Loading from './Pages/Loading.tsx'
 
 function App() {
   const [teams, setTeams] = useState([{}])

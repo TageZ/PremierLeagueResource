@@ -1,6 +1,6 @@
 import React from 'react'
-import Banner from '../Components/Banner';
-import '../Styling/Loading.css'
+import Banner from '../Components/Banner.tsx';
+import '../Styling/Loading.scss'
 
 function Loading(){
     

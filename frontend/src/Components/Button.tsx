@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import '../Styling/Button.css'
+import '../Styling/Button.scss'
 
 function Button({view, setView}){
 

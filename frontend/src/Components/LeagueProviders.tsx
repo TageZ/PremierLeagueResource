@@ -1,10 +1,15 @@
 import React, { useState, useEffect } from 'react'
-import Api from '../Utils/Api';
-import '../Styling/Sidebar.css'
+import Api from '../Utils/Api.ts';
+import '../Styling/Sidebar.scss'
+
+export interface Provider{
+    Name: string;
+    Assists: number;
+}
 
 function LeagueProviders(){
 
-    const [providers, setProviders] = useState([{}]);
+    const [providers, setProviders] = useState<Provider[]>([]);
 
     async function getProviders() {
         const data = await Api("assisters?name=");

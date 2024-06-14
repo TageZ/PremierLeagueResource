@@ -1,6 +1,6 @@
 import React from 'react'
 import {useNavigate} from 'react-router-dom'
-import '../Styling/Logo.css'
+import '../Styling/Logo.scss'
 
 function Logo({name, logo, index}){
 

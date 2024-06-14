@@ -1,10 +1,15 @@
 import React, { useState, useEffect } from 'react'
-import Api from '../Utils/Api';
-import '../Styling/Sidebar.css'
+import Api from '../Utils/Api.ts';
+import '../Styling/Sidebar.scss'
+
+export interface Scorer {
+    Name: string;
+    Goals: number;
+}
 
 function LeagueScorers(){
 
-    const [scorers, setScorers] = useState([{}]);
+    const [scorers, setScorers] = useState<Scorer[]>([]);
 
     async function getScorers() {
         const data = await Api("scorers?name=");

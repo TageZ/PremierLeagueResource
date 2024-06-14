@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
-import Api from '../Utils/Api';
-import '../Styling/Fixtures.css'
+import Api from '../Utils/Api.ts';
+import '../Styling/Fixtures.scss'
 
 function Results({teams, team, name}){
 

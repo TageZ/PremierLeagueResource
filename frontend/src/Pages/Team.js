@@ -1,11 +1,11 @@
 import React, { useState } from 'react'
-import NavBar from '../Components/Navbar'
-import '../Styling/Team.css'
-import Scorers from '../Components/Scorers'
-import Providers from '../Components/Providers'
-import Fixtures from '../Components/Fixtures'
-import Results from '../Components/Results'
-import Button from '../Components/Button'
+import NavBar from '../Components/Navbar.tsx'
+import '../Styling/Team.scss'
+import Scorers from '../Components/Scorers.tsx'
+import Providers from '../Components/Providers.tsx'
+import Fixtures from '../Components/Fixtures.tsx'
+import Results from '../Components/Results.jsx'
+import Button from '../Components/Button.tsx'
 
 function Team({teams, stat_tag, match_tag, logo, name}){
 

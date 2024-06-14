@@ -1,10 +1,11 @@
-import React, { useState, useEffect } from 'react'
-import Api from '../Utils/Api';
-import '../Styling/Statbox.css'
+import React, { useState, useEffect } from 'react';
+import Api from '../Utils/Api.ts';
+import '../Styling/Statbox.scss';
+import { Provider } from './LeagueProviders';
 
 function Providers({team, name}){
 
-    const [providers, setProviders] = useState([{}]);
+    const [providers, setProviders] = useState<Provider[]>([]);
 
     async function getProviders() {
         const data = await Api("assisters?name=" + team);
