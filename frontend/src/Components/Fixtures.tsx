@@ -29,7 +29,7 @@ function Fixtures({teams, team, name}: FixtureProps){
 
     async function getFixtures() {
         const data = await Api("fixtures?name=" + team);
-        if (data != undefined){
+        if (data !== undefined){
             setFixtures(data.slice(0,3));
         }
     }
