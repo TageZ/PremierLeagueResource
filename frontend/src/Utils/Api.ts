@@ -1,6 +1,6 @@
 async function Api(request: string) {
     try {
-        const response = await fetch("flask-service.pibus1em5gjgm.us-east-1.cs.amazonlightsail.com" + request, {
+        const response = await fetch("https://flask-service.pibus1em5gjgm.us-east-1.cs.amazonlightsail.com/" + request, {
             method: "GET",
             headers: {
                 "Content-Type": "application/json",
