@@ -26,7 +26,7 @@ function App() {
   }, ([]))
 
   return (
-    teams.length > 1 ? (
+    teams ? (
       <BrowserRouter data-testid="browser-router">
         <Routes>
           <Route path="/" element={<Home teams={teams}/>} />
