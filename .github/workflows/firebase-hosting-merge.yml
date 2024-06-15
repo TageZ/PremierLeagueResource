@@ -12,13 +12,13 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
       
-      - name: Install dependencies and build
-        working-directory: frontend
-        run: |
-          npm ci
-          npm run build
-        env:
-          CI: false
+      # - name: Install dependencies and build
+      #   working-directory: frontend
+      #   run: |
+      #     npm ci
+      #     npm run build
+      #   env:
+      #     CI: false
 
       - name: Deploy to Firebase Hosting
         uses: FirebaseExtended/action-hosting-deploy@v0
@@ -27,4 +27,4 @@ jobs:
           firebaseServiceAccount: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_EPL_RESOURCE }}
           channelId: live
           projectId: epl-resource
-          entrypoint: 'frontend/firebase.json'
+          entrypoint: 'frontend'
