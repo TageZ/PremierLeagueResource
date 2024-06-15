@@ -1,15 +1,17 @@
 import React, { useState, useEffect } from 'react'
-import Api from '../Utils/Api.ts';
+import Api from '../Utils/Api';
 import '../Styling/Fixtures.scss'
+import { TeamInfo } from '../App';
+import { Fixture, FixtureProps } from './Fixtures';
 
-function Results({teams, team, name}){
+function Results({teams, team, name}: FixtureProps){
 
-    function getLogoByTag(tag) {
+    function getLogoByTag(tag: string) {
         const team = teams.find(team => team.alt_name === tag);
-        return team ? team.logo : null;
+        return team ? team.logo : '';
     }
 
-    const [results, setResults] = useState([{}]);
+    const [results, setResults] = useState<Fixture[]>([]);
 
     async function getResults() {
         const data = await Api("results?name=" + team);

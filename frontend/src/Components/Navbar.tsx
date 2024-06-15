@@ -1,7 +1,11 @@
 import React from 'react';
 import '../Styling/Navbar.scss'
 
-const NavBar = ({ title }) => {
+interface NavBarProps{
+  title: string;
+}
+
+const NavBar = ({title}: NavBarProps) => {
     return (
       <nav className="navBar">
         <button className="navButton" onClick={() => window.location.href = '/'}>

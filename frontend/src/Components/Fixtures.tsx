@@ -1,20 +1,28 @@
 import React, { useState, useEffect } from 'react'
-import Api from '../Utils/Api.ts';
+import Api from '../Utils/Api';
 import '../Styling/Fixtures.scss'
+import { TeamInfo } from '../App';
 
-interface Fixture{
+export interface FixtureProps{
+    teams: TeamInfo[];
+    team: string;
+    name: string;
+}
+
+export interface Fixture{
     date: string;
     competition: string;
     homeTeam: string;
     awayTeam: string;
-    time: string;
+    time?: string;
+    score?: string;
 }
 
-function Fixtures({teams, team, name}){
+function Fixtures({teams, team, name}: FixtureProps){
 
-    function getLogoByTag(tag) {
+    function getLogoByTag(tag: string) {
         const team = teams.find(team => team.alt_name === tag);
-        return team ? team.logo : null;
+        return team ? team.logo : '';
     }
 
     const [fixtures, setFixtures] = useState<Fixture[]>([]);

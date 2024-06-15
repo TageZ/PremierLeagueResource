@@ -1,9 +1,14 @@
 import React, { useState, useEffect } from 'react'
-import Api from '../Utils/Api.ts';
+import Api from '../Utils/Api';
 import '../Styling/Statbox.scss'
 import { Scorer } from './LeagueScorers';
 
-function Scorers({team, name}){
+export interface StatProps{
+    team: string;
+    name: string;
+}
+
+function Scorers({team, name}: StatProps){
 
     const [scorers, setScorers] = useState<Scorer[]>([]);
 

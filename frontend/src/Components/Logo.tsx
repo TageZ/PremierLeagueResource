@@ -2,7 +2,13 @@ import React from 'react'
 import {useNavigate} from 'react-router-dom'
 import '../Styling/Logo.scss'
 
-function Logo({name, logo, index}){
+interface LogoProps{
+    name: string;
+    logo: string;
+    index: number;
+}
+
+function Logo({name, logo, index}: LogoProps){
 
     const navigate = useNavigate();
 

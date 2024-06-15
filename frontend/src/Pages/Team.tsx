@@ -1,13 +1,22 @@
 import React, { useState } from 'react'
-import NavBar from '../Components/Navbar.tsx'
+import NavBar from '../Components/Navbar'
 import '../Styling/Team.scss'
-import Scorers from '../Components/Scorers.tsx'
-import Providers from '../Components/Providers.tsx'
-import Fixtures from '../Components/Fixtures.tsx'
-import Results from '../Components/Results.jsx'
-import Button from '../Components/Button.tsx'
+import Scorers from '../Components/Scorers'
+import Providers from '../Components/Providers'
+import Fixtures from '../Components/Fixtures'
+import Results from '../Components/Results'
+import Button from '../Components/Button'
+import { TeamInfo } from '../App'
 
-function Team({teams, stat_tag, match_tag, logo, name}){
+interface TeamProps{
+    teams: TeamInfo[];
+    stat_tag: string;
+    match_tag: string;
+    logo: string;
+    name: string;
+}
+
+function Team({teams, stat_tag, match_tag, logo, name}: TeamProps){
 
     const [view, setView] = useState('fixtures');
 

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import Api from '../Utils/Api.ts';
+import Api from '../Utils/Api';
 import '../Styling/Sidebar.scss'
 
 export interface Provider{

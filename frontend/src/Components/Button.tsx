@@ -1,9 +1,14 @@
 import React, { useState, useEffect } from 'react'
 import '../Styling/Button.scss'
 
-function Button({view, setView}){
+interface ButtonProps{
+    view: string;
+    setView: (view: string) => void;
+}
 
-    const handleClick = (selectedView, event) => {
+function Button({view, setView}: ButtonProps){
+
+    const handleClick = (selectedView: string, event: React.MouseEvent<HTMLButtonElement>) => {
         document.querySelectorAll('.view-button').forEach(button => {
             button.classList.remove('active');
         });

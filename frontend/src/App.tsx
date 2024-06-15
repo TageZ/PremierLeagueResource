@@ -1,32 +1,25 @@
 import React, { useState, useEffect } from 'react'
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Home from './Pages/Home.jsx'
-import Team from './Pages/Team.js'
-import Loading from './Pages/Loading.tsx'
+import Home from './Pages/Home'
+import Team from './Pages/Team'
+import Loading from './Pages/Loading'
+import Api from './Utils/Api'
+
+export interface TeamInfo{
+  name: string;
+  logo: string;
+  sky_tag: string;
+  bbc_tag: string;
+  alt_name: string;
+}
 
 function App() {
-  const [teams, setTeams] = useState([{}])
+  const [teams, setTeams] = useState<TeamInfo[]>([]);
 
   async function getTeams() {
-      try {
-          const response = await fetch("http://127.0.0.1:5000/teams", {
-              method: "GET",
-              headers: {
-                  "Content-Type": "application/json",
-              },
-          });
-
-          if (!response.ok) {
-              throw new Error('Failed to fetch data');
-          }
-
-          const result = await response.json();
-          setTeams(result);
-      } catch (error) {
-          //Error
-          console.log("Error getting teams");
-      }
-  }
+    const data = await Api("teams");
+    setTeams(data);
+}
 
   useEffect (() => {
     getTeams()

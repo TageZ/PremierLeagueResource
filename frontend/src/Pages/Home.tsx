@@ -1,13 +1,16 @@
 import React, { useState, useEffect } from 'react'
 //Components
-import Logo from '../Components/Logo.tsx';
-import Banner from '../Components/Banner.tsx';
+import Logo from '../Components/Logo';
+import Banner from '../Components/Banner';
 //Styling
 import '../Styling/Home.scss'
+import { TeamInfo } from '../App';
 
-function Home({teams}){
+interface HomeProps{
+    teams: TeamInfo[];
+}
 
-    console.log(teams);
+function Home({teams}: HomeProps){
 
     return (
         <div className='sections'>
@@ -15,7 +18,7 @@ function Home({teams}){
 
             <div className="logos">
                 {(teams.map((team, i) => (
-                    <Logo teams={teams} name={team.bbc_tag} logo={team.logo} key={i}/>
+                    <Logo name={team.bbc_tag} logo={team.logo} index={i}/>
                 )))}
             </div>
         </div >

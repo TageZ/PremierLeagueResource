@@ -1,7 +1,7 @@
 import React from 'react'
 import '../Styling/Banner.scss'
-import LeagueScorers from './LeagueScorers.tsx'
-import LeagueProviders from './LeagueProviders.tsx'
+import LeagueScorers from './LeagueScorers'
+import LeagueProviders from './LeagueProviders'
 
 function Banner(){
 

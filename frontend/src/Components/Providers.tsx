@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from 'react';
-import Api from '../Utils/Api.ts';
+import Api from '../Utils/Api';
 import '../Styling/Statbox.scss';
 import { Provider } from './LeagueProviders';
+import { StatProps } from './Scorers';
 
-function Providers({team, name}){
+function Providers({team, name}: StatProps){
 
     const [providers, setProviders] = useState<Provider[]>([]);
 
