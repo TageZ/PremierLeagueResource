@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React from 'react'
 //Components
 import Logo from '../Components/Logo';
 import Banner from '../Components/Banner';

@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import Api from '../Utils/Api';
 import '../Styling/Fixtures.scss'
-import { TeamInfo } from '../App';
 import { Fixture, FixtureProps } from './Fixtures';
 
 function Results({teams, team, name}: FixtureProps){
