@@ -11,12 +11,15 @@ function Results({teams, team, name}: FixtureProps){
     }
 
     const [results, setResults] = useState<Fixture[]>([]);
+    const [loaded, setLoaded] = useState(false);
 
     async function getResults() {
         const data = await Api("results?name=" + team);
         if (data != undefined){
-            setResults(data.slice(0,3));
+            const premierLeagueResults = data.filter((fixture: Fixture) => fixture.competition.trim() === "Premier League");
+            setResults(premierLeagueResults.slice(0, 3));
         }
+        setLoaded(true);
     }
   
     useEffect (() => {
@@ -27,7 +30,9 @@ function Results({teams, team, name}: FixtureProps){
         <div className='matches-box'>
             <div className='stat-title'>{name} Results</div>
             <div className='fixture-boxes'>
-                {results.map((fixture, index) => (
+                {results.length > 0 ? 
+                
+                results.map((fixture, index) => (
                     <div className='fixture-box' key={index}>
                         <div className='fixture-header'>
                             <div className='date'>
@@ -49,7 +54,16 @@ function Results({teams, team, name}: FixtureProps){
                             </div>
                         </div>
                     </div>
-                ))}
+                ))
+                :
+                    <div className="loading-box">
+                        {loaded === true ?
+                            <span>No Matches Found</span>
+                            :
+                            <span>Loading</span>
+                        } 
+                    </div>
+                }
             </div>
         </div>
     );

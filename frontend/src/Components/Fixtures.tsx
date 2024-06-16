@@ -27,12 +27,15 @@ function Fixtures({teams, team, name}: FixtureProps){
     }
 
     const [fixtures, setFixtures] = useState<Fixture[]>([]);
+    const [loaded, setLoaded] = useState(false);
 
     async function getFixtures() {
         const data = await Api("fixtures?name=" + team);
         if (data !== undefined){
-            setFixtures(data.slice(0,3));
+            const premierLeagueFixtures = data.filter((fixture: Fixture) => fixture.competition.trim() === "Premier League");
+            setFixtures(premierLeagueFixtures.slice(0, 3));
         }
+        setLoaded(true);
     }
 
     function convertTime(time: string | undefined) {
@@ -55,7 +58,9 @@ function Fixtures({teams, team, name}: FixtureProps){
         <div className='matches-box'>
             <div className='stat-title'>{name} Fixtures</div>
             <div className='fixture-boxes'>
-                {fixtures.map((fixture, index) => (
+                {fixtures.length > 0 ? 
+                
+                fixtures.map((fixture, index) => (
                     <div className='fixture-box' key={index}>
                         <div className='fixture-header'>
                             <div className='date'>
@@ -77,7 +82,16 @@ function Fixtures({teams, team, name}: FixtureProps){
                             </div>
                         </div>
                     </div>
-                ))}
+                ))
+                :
+                    <div className="loading-box">
+                        {loaded === true ?
+                            <span>No Matches Found</span>
+                            :
+                            <span>Loading</span>
+                        } 
+                    </div>
+                }
             </div>
         </div>
     );
