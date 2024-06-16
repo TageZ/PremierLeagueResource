@@ -15,11 +15,13 @@ function Banner(){
                     <img className="pl-logo" src={process.env.PUBLIC_URL + '/assets/premier-league.svg'} alt="Premier League Logo">
                     </img>
                 </div>
-                <div className='banner-side-bar'>
-                    <LeagueScorers/>
-                </div>
-                <div className='banner-side-bar'>
-                    <LeagueProviders/>
+                <div className='banner-stats'>
+                    <div className='banner-side-bar'>
+                        <LeagueScorers/>
+                    </div>
+                    <div className='banner-side-bar'>
+                        <LeagueProviders/>
+                    </div>
                 </div>
             </div>
         </div>

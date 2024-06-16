@@ -32,34 +32,39 @@
 }
 
 .banner-side-bar{
-    flex: 1;
-    width: 55vh;
-    height: 55vh;
     margin: 1vw;
+    width: 28vw;
+    height: 28vw;
     display: flex;
     justify-content: center;
     align-items: center;
     background-image: linear-gradient(-45deg, #3B99FC 25%, #3BA9FF 25%, #3BA9FF 50%, #3B99FC 50%, #3B99FC 75%, #3BA9FF 75%, #3BA9FF);
     background-size: 15vw 15vw;
-    border-radius: 5vh;
+    border-radius: 2vw;
+}
+
+.banner-stats{
+    display: flex;
+    width: 65vw;
+    justify-content: space-evenly;
 }
 
 .side-bar-content{
-    width: 52vh;
-    height: 52vh;
+    width: 26vw;
+    height: 26vw;
     background-color: white;
-    border-radius: 5vh;
+    border-radius: inherit;
 }
 
 .pl-logo-container{
-    flex: 1;
+    flex: 0;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .pl-logo{
-    height: calc(85vh - 7.5vh);
+    width: 35vw;
 }
 
 

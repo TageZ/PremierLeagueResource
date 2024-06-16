@@ -1,11 +1,13 @@
 .logo {
-    height: 10vh;
+    height: 5vw;
     width: auto;
     margin: 0.3vw;
+    display: flex;
+    justify-content: center;
 }
   
 .logo-image {
-    height: 10vh;
+    height: 100%;
     width: auto;
     transition: transform 0.3s ease;
 }
