@@ -74,10 +74,14 @@
 .home-team{
     width: 33%;
     text-align:left;
+    display: flex;
+    justify-content: center;
 }
 
 .away-team{
     width: 33%;
     text-align: right;
+    display: flex;
+    justify-content: center;
 }
 

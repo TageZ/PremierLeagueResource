@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react'
+import { format, toZonedTime } from 'date-fns-tz';
 import Api from '../Utils/Api';
 import '../Styling/Fixtures.scss'
 import { TeamInfo } from '../App';
@@ -33,6 +34,18 @@ function Fixtures({teams, team, name}: FixtureProps){
             setFixtures(data.slice(0,3));
         }
     }
+
+    function convertTime(time: string | undefined) {
+        if (time === undefined){
+            return '';
+        }
+
+        const now = new Date();
+        const [hours, minutes] = time.split(':').map(Number);
+
+        //TODO
+        return time;
+    }
   
     useEffect (() => {
       getFixtures();
@@ -57,7 +70,7 @@ function Fixtures({teams, team, name}: FixtureProps){
                                 <img className='logo'src={getLogoByTag(fixture.homeTeam)}></img>
                             </div>
                             <div className='time'>
-                                {fixture.time}
+                                {convertTime(fixture.time)}
                             </div>
                             <div className='away-team'>
                                 <img className='logo' src={getLogoByTag(fixture.awayTeam)}></img>
