@@ -13,10 +13,10 @@ teams_data = sorted(teams_data, key=lambda x: x['sky_tag'])
 app = Flask(__name__)
 CORS(app, resources={r"/*": {"origins": "*"}})
 
-@app.route('/update_teams')
-def update_teams():
-    teams.buildTeamsJson()
-    return "Completed"
+# @app.route('/update_teams')
+# def update_teams():
+#     teams.buildTeamsJson()
+#     return "Completed"
 
 @app.route('/teams')
 def get_teams():
