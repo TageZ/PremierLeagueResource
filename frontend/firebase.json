@@ -6,6 +6,12 @@
       "**/.*",
       "**/node_modules/**",
       "**/*.lint"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
     ]
   }
 }
