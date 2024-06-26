@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import { format, toZonedTime } from 'date-fns-tz';
+import { format, toZonedTime, fromZonedTime } from 'date-fns-tz';
 import Api from '../Utils/Api';
 import '../Styling/Fixtures.scss'
 import { TeamInfo } from '../App';
@@ -29,6 +29,26 @@ function Fixtures({teams, team, name}: FixtureProps){
     const [fixtures, setFixtures] = useState<Fixture[]>([]);
     const [loaded, setLoaded] = useState(false);
 
+    const convertTime = (time: string | undefined): string => {
+        const ukTime = 'Europe/London';
+        const centralTime = 'America/Chicago';
+        const currentDate = new Date().toISOString().split('T')[0];
+        const ukDateTime = `${currentDate}T${time}:00`;
+        const ukDate = fromZonedTime(ukDateTime, ukTime);
+        const centralDate = toZonedTime(ukDate, centralTime);
+        const convertedTime = format(centralDate, 'HH:mm', { timeZone: centralTime });
+      
+        return militaryTimeConvert(convertedTime);
+      };
+
+    const militaryTimeConvert = (time : string): string => {
+        const [hours, minutes] = time.split(':').map(Number);
+        const period = hours >= 12 ? 'PM' : 'AM';
+        const hours12 = hours % 12 || 12;
+        const formattedHours = hours12.toString();
+        return `${formattedHours}:${minutes.toString().padStart(2, '0')} ${period}`;
+    }
+
     async function getFixtures() {
         const data = await Api("fixtures?name=" + team);
         if (data !== undefined){
@@ -36,18 +56,6 @@ function Fixtures({teams, team, name}: FixtureProps){
             setFixtures(premierLeagueFixtures.slice(0, 3));
         }
         setLoaded(true);
-    }
-
-    function convertTime(time: string | undefined) {
-        if (time === undefined){
-            return '';
-        }
-
-        const now = new Date();
-        const [hours, minutes] = time.split(':').map(Number);
-
-        //TODO
-        return time;
     }
   
     useEffect (() => {
