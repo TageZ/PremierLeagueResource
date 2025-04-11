@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import Api from '../Utils/Api';
+import { Api } from '../Utils/Api';
 import '../Styling/Statbox.scss';
 import { Provider } from './LeagueProviders';
 import { StatProps } from './Scorers';

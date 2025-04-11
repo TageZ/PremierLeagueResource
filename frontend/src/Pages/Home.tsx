@@ -18,7 +18,7 @@ function Home({teams}: HomeProps){
 
             <div className="logos">
                 {(teams.map((team, i) => (
-                    <Logo name={team.bbc_tag} logo={team.logo} index={i}/>
+                    <Logo name={team.tag} logo={team.logo} index={i}/>
                 )))}
             </div>
         </div >

@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from 'react'
-import Api from '../Utils/Api';
+import { Api } from '../Utils/Api';
 import '../Styling/Fixtures.scss'
 import { Fixture, FixtureProps } from './Fixtures';
 
 function Results({teams, team, name}: FixtureProps){
 
     function getLogoByTag(tag: string) {
-        const team = teams.find(team => team.alt_name === tag);
+        const team = teams.find(team => team.tag === tag);
         return team ? team.logo : '';
     }
 
@@ -14,12 +14,12 @@ function Results({teams, team, name}: FixtureProps){
     const [loaded, setLoaded] = useState(false);
 
     async function getResults() {
-        const data = await Api("results?name=" + team);
-        if (data != undefined){
-            const premierLeagueResults = data.filter((fixture: Fixture) => fixture.competition.trim() === "Premier League");
-            setResults(premierLeagueResults.slice(0, 3));
-        }
-        setLoaded(true);
+        // const data = await Api("results?name=" + team);
+        // if (data != undefined){
+        //     const premierLeagueResults = data.filter((fixture: Fixture) => fixture.competition.trim() === "Premier League");
+        //     setResults(premierLeagueResults.slice(0, 3));
+        // }
+        // setLoaded(true);
     }
   
     useEffect (() => {

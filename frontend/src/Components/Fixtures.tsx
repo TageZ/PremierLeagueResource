@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { format, toZonedTime, fromZonedTime } from 'date-fns-tz';
-import Api from '../Utils/Api';
+import { FixtureAPI } from '../Utils/Api';
 import '../Styling/Fixtures.scss'
 import { TeamInfo } from '../App';
 
@@ -12,7 +12,7 @@ export interface FixtureProps{
 
 export interface Fixture{
     date: string;
-    competition: string;
+    competition?: string;
     homeTeam: string;
     awayTeam: string;
     time?: string;
@@ -22,7 +22,7 @@ export interface Fixture{
 function Fixtures({teams, team, name}: FixtureProps){
 
     function getLogoByTag(tag: string) {
-        const team = teams.find(team => team.alt_name === tag);
+        const team = teams.find(team => team.tag === tag);
         return team ? team.logo : '';
     }
 
@@ -50,12 +50,8 @@ function Fixtures({teams, team, name}: FixtureProps){
     }
 
     async function getFixtures() {
-        const data = await Api("fixtures?name=" + team);
-        if (data !== undefined){
-            const premierLeagueFixtures = data.filter((fixture: Fixture) => fixture.competition.trim() === "Premier League");
-            setFixtures(premierLeagueFixtures.slice(0, 3));
-        }
-        setLoaded(true);
+        // const data = await FixtureAPI(57)
+        // console.log(data)
     }
   
     useEffect (() => {

@@ -1,0 +1,23 @@
+[
+    {"id":57,"name":"Arsenal FC","logo":"https://static.files.bbci.co.uk/core/website/assets/static/sport/football/arsenal.b8d11b6a4019ac9174ad.svg","tag":"ars"},
+    {"id":58,"name":"Aston Villa FC","logo":"https://static.files.bbci.co.uk/core/website/assets/static/sport/football/aston-villa.754b3fa019c3b800b52d.svg","tag":"avl"},
+    {"id":61,"name":"Chelsea FC","logo":"https://static.files.bbci.co.uk/core/website/assets/static/sport/football/chelsea.065d90cfec11cce54928.svg","tag":"che"},
+    {"id":62,"name":"Everton FC","logo":"https://static.files.bbci.co.uk/core/website/assets/static/sport/football/everton.1c2e4b8f74caea608676.svg","tag":"eve"},
+    {"id":63,"name":"Fulham FC","logo":"https://static.files.bbci.co.uk/core/website/assets/static/sport/football/fulham.32e357c80f09ea893dd6.svg","tag":"ful"},
+    {"id":64,"name":"Liverpool FC","logo":"https://static.files.bbci.co.uk/core/website/assets/static/sport/football/liverpool.56913b2197c57b2056e5.svg","tag":"liv"},
+    {"id":65,"name":"Manchester City FC","logo":"https://static.files.bbci.co.uk/core/website/assets/static/sport/football/manchester-city.ac0fd3e437f9c81828a9.svg","tag":"mci"},
+    {"id":66,"name":"Manchester United FC","logo":"https://static.files.bbci.co.uk/core/website/assets/static/sport/football/manchester-united.86bd98b7c3e30d7b85d3.svg","tag":"mun"},
+    {"id":67,"name":"Newcastle United FC","logo":"https://static.files.bbci.co.uk/core/website/assets/static/sport/football/newcastle-united.56c106a0ece41ecdc010.svg","tag":"new"},
+    {"id":73,"name":"Tottenham Hotspur FC","logo":"https://static.files.bbci.co.uk/core/website/assets/static/sport/football/tottenham-hotspur.0bfa51c9f1f0615c9fb6.svg","tag":"tot"},
+    {"id":76,"name":"Wolverhampton Wanderers FC","logo":"https://static.files.bbci.co.uk/core/website/assets/static/sport/football/wolverhampton-wanderers.11a9da51bfda62cdae72.svg","tag":"wol"},
+    {"id":338,"name":"Leicester City FC","logo":"https://static.files.bbci.co.uk/core/website/assets/static/sport/football/leicester-city.84a92b176cfdeb9b12d0.svg","tag":"lei"},
+    {"id":340,"name":"Southampton FC","logo":"https://static.files.bbci.co.uk/core/website/assets/static/sport/football/southampton.bce3dc16aca543921473.svg","tag":"sou"},
+    {"id":349,"name":"Ipswich Town FC","logo":"https://static.files.bbci.co.uk/core/website/assets/static/sport/football/ipswich-town.b0a450a1f316743cd28e.svg","tag":"ips"},
+    {"id":351,"name":"Nottingham Forest FC","logo":"https://static.files.bbci.co.uk/core/website/assets/static/sport/football/nottingham-forest.8152a495d9e1e6ca842d.svg","tag":"not"},
+    {"id":354,"name":"Crystal Palace FC","logo":"https://static.files.bbci.co.uk/core/website/assets/static/sport/football/crystal-palace.d1d34eb505c894bb71d2.svg","tag":"cry"},
+    {"id":397,"name":"Brighton & Hove Albion FC","logo":"https://static.files.bbci.co.uk/core/website/assets/static/sport/football/brighton-and-hove-albion.894064a4c3928f88adaf.svg","tag":"bha"},
+    {"id":402,"name":"Brentford FC","logo":"https://static.files.bbci.co.uk/core/website/assets/static/sport/football/brentford.30131acd7824e12e9f06.svg","tag":"bre"},
+    {"id":563,"name":"West Ham United FC","logo":"https://static.files.bbci.co.uk/core/website/assets/static/sport/football/west-ham-united.8031b8c4c7910b77fc9a.svg","tag":"whu"},
+    {"id":1044,"name":"AFC Bournemouth","logo":"https://static.files.bbci.co.uk/core/website/assets/static/sport/football/afc-bournemouth.06b040f58cc005d437da.svg","tag":"bou"}
+  ]
+  
